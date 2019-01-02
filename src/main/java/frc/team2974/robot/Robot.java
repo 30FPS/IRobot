@@ -1,8 +1,12 @@
 package frc.team2974.robot;
 
-import edu.wpi.first.wpilibj.IterativeRobot;
+import edu.wpi.first.wpilibj.TimedRobot;
+import frc.team2974.robot.Subsystem.Drivetrain;
 
-public class Robot extends IterativeRobot {
+public class Robot extends TimedRobot {
+
+    public static Drivetrain drivetrain;
+
     @Override
     public void robotInit() { }
 

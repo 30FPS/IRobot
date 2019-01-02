@@ -6,9 +6,21 @@ public class Config {
 
         public class Joystick {
             public static final int LEFT_JOYSTICK_PORT = 0;
-            public static final int RIGHT_JOYSTICK_PORT =1;
+            public static final int RIGHT_JOYSTICK_PORT = 1;
+        }
+
+        public class Buttons {
+            public static final int SHIFT_UP_PORT = 998;
+            public static final int SHIFT_DOWN_PORT = 999;
+        }
+
+        public class Deadzone {
+            public static final double CONTROLLER_DEADZONE = 0.5;
         }
     }
+
+
+
 
     public class Motor {
         public static final int LEFT_MOTOR_PORT = 0;
@@ -17,8 +29,10 @@ public class Config {
     }
 
     public class Encoder {
-        public static final int LEFT_ENCODER_CHANNEL = 0;
-        public static final int RIGHT_ENCODER_CHANNEL = 1;
+        public static final int LEFT_ENCODER_CHANNEL_A = 0;
+        public static final int LEFT_ENCODER_CHANNEL_B = 2;
+        public static final int RIGHT_ENCODER_CHANNEL_A = 1;
+        public static final int RIGHT_ENCODER_CHANNEL_B = 3;
         public static final double ENCODER_DISTANCE_PER_PULSE = 0.000001;
     }
 }
