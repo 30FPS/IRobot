@@ -23,5 +23,8 @@ public class Drivetrain extends AbstractDrivetrain {
         }
     }
 
+    public static void shiftDown() {
+
+    }
 
 }
