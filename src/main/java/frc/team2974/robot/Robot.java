@@ -41,6 +41,10 @@ public class Robot extends TimedRobot {
         drivetrain.cancelControllerMotion();
         drivetrain.startControllerMotion(new Pose(0,0));
         drivetrain.shiftUp();
+
+        //Intake
+        drivetrain.initialIntakeState();
+
         DriverStation.getInstance().getGameSpecificMessage();
         updateSmartDashboard();
     }

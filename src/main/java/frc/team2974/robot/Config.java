@@ -9,9 +9,17 @@ public class Config {
             public static final int RIGHT_JOYSTICK_PORT = 1;
         }
 
+
+        //Intake Ports
+        public class IntakeButtons {
+            public static final int LEFT_INTAKE_PORT = 0;
+            public static final int RIGHT_INTAKE_PORT = 1;
+        }
+
+
         public class Buttons {
-            public static final int SHIFT_UP_PORT = 998;
-            public static final int SHIFT_DOWN_PORT = 999;
+            public static final int SHIFT_UP_PORT = 2;
+            public static final int SHIFT_DOWN_PORT = 3;
         }
 
         public class Deadzone {
