@@ -22,6 +22,15 @@ public class DriveCommand extends Command {
         double leftPos = leftJoystick.getY();
         double rightPos = rightJoystick.getY();
 
+        //Intake
+        if (leftIntake.get()) {
+            drivetrain.leftIntake();
+        }
+
+        if (rightIntake.get()) {
+            drivetrain.rightIntake();
+        }
+
         if (Math.abs(leftPos) < CONTROLLER_DEADZONE) {
             leftPos = 0;
         }
